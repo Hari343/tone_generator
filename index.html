@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Web Audio Oscillator</title>
+	<link rel="stylesheet"  href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="main">
+			<h1>Web Audio Oscillator</h1>
+			<span class="label">Oscillator type</span>
+			<br>
+			<select id="type">
+				<option value="sine">Sine</option>
+				<option value="square">Square</option>
+				<option value="triangle">Triangle</option>
+				<option value="sawtooth">Saw-tooth</option>
+			</select>
+			<br> <br>
+			<span class="label">Frequency</span>
+			<br> 
+			<input id="freq" type="text">
+			<br> <br>
+			<input id="btn" type="button" onclick="press()" value="Play">
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
